@@ -35,7 +35,7 @@ p {
 }
 
 body {
-  background-image: url("/imgs/1083466.jpg");
+  background-image: url("/imgs/BackGround.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   color: var(--color-body);
@@ -111,7 +111,6 @@ body {
 
 .list--tick {
   color: #88fff7;
-  list-style-image: url(../Images/tick.svg);
   padding-left: 3rem;
 }
 
