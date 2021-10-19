@@ -30,119 +30,162 @@
         <nav class="nav">
           <ul class="list nav__list">
             <li class="nav__item nav__key"><div href="#">Q</div></li>
-            <li class="nav__item"><a href="#">Quests</a></li>
+            <li id="nav-btn-Quest" class="nav__item"><a href="#">Quests</a></li>
             <li class="nav__item"><a href="#">Map</a></li>
             <li class="nav__item"><a href="#">Inventory</a></li>
             <li class="nav__item"><a href="#">Weapons</a></li>
-            <li class="nav__item"><a href="#">Upgrades</a></li>
+            <li id="nav-btn-Skills" class="nav__item">
+              <a href="#">Upgrades</a>
+            </li>
             <li class="nav__item nav__key"><div href="#">E</div></li>
           </ul>
         </nav>
-      </div>
-    </div>
-    <section class="block container block-plans">
-      <div class="grid grid--1x3">
-        <div class="plan">
-          <div class="card card--secondary">
-            <!-- dropdown -->
-            <div class="dropDown">
-              <button class="mainQuest-header">
-                <div class="marker marker--main"></div>
-                <div class="mainQuest-header__title">Main Quests</div>
-                <div><i class="fas fa-sort-up arrow-dropdown"></i></div>
-                <!-- <i class="fas fa-sort-down"></i> -->
-              </button>
-
-              <div id="list-main-quest" class="list1">
-                <button id="quest-name" class="links">
-                  Above Pelor's Tower
-                </button>
-                <button id="quest-name" class="links">
-                  Through the Strong Worlds
-                </button>
-                <button id="quest-name" class="links">
-                  The Haunted Sisters Diary
-                </button>
-                <button id="quest-name" class="links">Moradin's Fey</button>
-                <button id="quest-name" class="links">
-                  The Crops of Torog
-                </button>
-              </div>
-            </div>
-            <div class="dropDown">
-              <button class="sideQuest-header">
-                <div class="marker marker--secondary"></div>
-                <div class="mainQuest-header__title">Side Quests</div>
-                <div><i class="fas fa-sort-up arrow-dropdown"></i></div>
-                <!-- <i class="fas fa-sort-down"></i> -->
-              </button>
-
-              <div id="list-side-quest" class="list2">
-                <button id="quest-name" class="links">
-                  <i class="fas fa-exclamation"></i>
-                  Within the Shadowfell
-                </button>
-                <button id="quest-name" class="links">
-                  The Brave Book Companionship
-                </button>
-                <button id="quest-name" class="links">
-                  The Lie of Lake Wintermist
-                </button>
-                <button id="quest-name" class="links">
-                  The Traveling Barter from Below
-                </button>
-                <button id="quest-name" class="links">
-                  The Alliance of Nentir River
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="hero">
+        <div style="display: none" id="skills-container" class="hero">
           <div class="plan">
-            <div class="card card--secondary lore--card">
-              <header class="card__header">
-                <span id="quest-header" class="plan__price"
-                  >Above Pelor's Tower</span
-                >
+            <div class="card card--secondary-skills lore--card">
+              <header class="card__header-skills">
+                <span id="quest-header" class="plan__price">Technomancer</span>
               </header>
-              <div class="card__body">
-                <ul class="list list--tick">
-                  <li id="quest-obj" class="list__item">
-                    <i class="far fa-check-square"></i>
-                    Objective 1
-                  </li>
-                  <li id="quest-obj" class="list__item">
-                    <i class="far fa-check-square"></i>
-                    Objective 2
-                  </li>
-                  <li id="quest-obj" class="list__item">
-                    <i class="far fa-check-square"></i>
-                    Objective 3
-                  </li>
-                  <li id="quest-obj" class="list__item">
-                    <i class="fas fa-sign-in-alt"></i>
-                    Objective 4
-                  </li>
+              <div class="card__body-skills">
+                <ul class="list list--tick-tree">
+                  <img src="/imgs/Screenshot_4.png" alt="" />
                 </ul>
               </div>
             </div>
           </div>
           <div class="plan hero--description">
-            <div class="card card--secondary">
+            <div class="card card--secondary-skills">
+              <header class="card__header-skills">Exoskeleton</header>
               <div class="card__body">
-                <ul class="list list--tick">
-                  <li class="list__item quest-description">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Veniam dolor ducimus nemo fugiat quas doloremque labore. Ab
-                    consequatur molestias quos.
-                  </li>
+                <ul class="list list--tick-tree">
+                  <img src="/imgs/Screenshot_4.png" alt="" />
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="plan hero--description">
+            <div class="card card--secondary-skills">
+              <header class="card__header-skills">Nanotech</header>
+              <div class="card__body-skills">
+                <ul class="list list--tick-tree">
+                  <img src="/imgs/Screenshot_4.png" alt="" />
                 </ul>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+      <section id="quests-container" class="block container block-plans">
+        <div class="grid grid--1x3">
+          <div class="plan">
+            <div class="card card--secondary">
+              <!-- dropdown -->
+              <div class="dropDown">
+                <button class="mainQuest-header">
+                  <div class="marker marker--main"></div>
+                  <div class="mainQuest-header__title">Main Quests</div>
+                  <div>
+                    <i
+                      id="list-main-quest_arrow"
+                      class="fas fa-sort-up arrow-dropdown"
+                    ></i>
+                  </div>
+                  <!-- <i class="fas fa-sort-down"></i> -->
+                </button>
+
+                <div id="list-main-quest" class="list1">
+                  <button id="quest-name" class="links">
+                    Above Pelor's Tower
+                  </button>
+                  <button id="quest-name" class="links">
+                    Through the Strong Worlds
+                  </button>
+                  <button id="quest-name" class="links">
+                    The Haunted Sisters Diary
+                  </button>
+                  <button id="quest-name" class="links">Moradin's Fey</button>
+                  <button id="quest-name" class="links">
+                    The Crops of Torog
+                  </button>
+                </div>
+              </div>
+              <div class="dropDown">
+                <button class="sideQuest-header">
+                  <div class="marker marker--secondary"></div>
+                  <div class="mainQuest-header__title">Side Quests</div>
+                  <div>
+                    <i
+                      id="list-side-quest_arrow"
+                      class="fas fa-sort-up arrow-dropdown"
+                    ></i>
+                  </div>
+                </button>
+                <div id="list-side-quest" class="list2">
+                  <button id="quest-name" class="links">
+                    Within the Shadowfell
+                  </button>
+                  <button id="quest-name" class="links">
+                    The Brave Book Companionship
+                  </button>
+                  <button id="quest-name" class="links">
+                    The Lie of Lake Wintermist
+                  </button>
+                  <button id="quest-name" class="links">
+                    The Traveling Barter from Below
+                  </button>
+                  <button id="quest-name" class="links">
+                    The Alliance of Nentir River
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hero">
+            <div class="plan">
+              <div class="card card--secondary lore--card">
+                <header class="card__header">
+                  <span id="quest-header" class="plan__price"
+                    >Above Pelor's Tower</span
+                  >
+                </header>
+                <div class="card__body">
+                  <ul class="list list--tick">
+                    <li id="quest-obj" class="list__item">
+                      <i class="far fa-check-square"></i>
+                      Objective 1
+                    </li>
+                    <li id="quest-obj" class="list__item">
+                      <i class="far fa-check-square"></i>
+                      Objective 2
+                    </li>
+                    <li id="quest-obj" class="list__item">
+                      <i class="far fa-check-square"></i>
+                      Objective 3
+                    </li>
+                    <li id="quest-obj" class="list__item">
+                      <i class="fas fa-crosshairs fa-sm"></i>
+                      Objective 4
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="plan hero--description">
+              <div class="card card--secondary">
+                <div class="card__body">
+                  <ul class="list list--tick">
+                    <li class="list__item quest-description">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Veniam dolor ducimus nemo fugiat quas doloremque labore.
+                      Ab consequatur molestias quos.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
   </body>
 </html>
