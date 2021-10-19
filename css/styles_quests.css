@@ -57,7 +57,7 @@ body {
     rgba(9, 105, 168, 0.2) 0px 15px, rgba(5, 138, 226, 0.1) 0px 20px,
     rgba(6, 139, 228, 0.05) 0px 25px;
   margin-top: 1.5rem;
-  min-height: 20rem;
+  min-height: 57rem;
 }
 
 .card__header {
@@ -239,7 +239,7 @@ body {
   justify-content: center;
   justify-content: space-between;
   margin-top: 3rem;
-  padding: 0 1rem;
+  padding: 0;
   /* box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset; */
 }
 
@@ -285,10 +285,10 @@ body {
 
   .nav__list {
     display: flex;
+    justify-content: space-between;
     font-size: 1.6rem;
     max-height: 100%;
     opacity: 1;
-    width: auto;
   }
 
   .nav__item {
