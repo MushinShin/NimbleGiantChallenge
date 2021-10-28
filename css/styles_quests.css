@@ -35,7 +35,7 @@ p {
 }
 
 body {
-  background-image: url("/imgs/BackGround.jpg");
+  background-image: url("../imgs/BackGround.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   color: var(--color-body);
